@@ -52,11 +52,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL                     &kp N1     &kp N2       &kp N3    &kp N4     &kp N5  &tog 1                                                                          &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&mt LS(LA(LC(LG(LGUI)))) TAB  &kp Q      &kp W        &kp E     &kp R      &kp T   &none                                                                           &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&mt LCTRL ESCAPE              &kp A      &mt LCTRL S  &kp D     &kp F      &kp G   &none     &mt LCTRL F2  &kp F4        &kp F3    &mt RCTRL F1                    &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT                     &kp Z      &kp X        &kp C     &kp V      &kp B                           &kp LALT      &kp RALT                                             &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2                         &kp GRAVE  &kp LCTRL    &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL       &kp LGUI      &kp RGUI  &mt LS(LA(LC(LG(LGUI)))) ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL                     &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                            &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0           &kp MINUS
+&mt LS(LA(LC(LG(LGUI)))) TAB  &kp Q      &kp W      &kp E     &kp R      &kp T   &none                                                                             &none      &kp Y   &kp U   &kp I      &kp O     &kp P            &kp BSLH
+&mt LCTRL ESCAPE              &kp A      &kp S      &kp D     &kp F      &kp G   &none     &mt LCTRL F2  &kp F4        &kp F3      &mt RCTRL F1                    &none      &kp H   &kp J   &kp K      &kp L     &lt 4 SEMICOLON  &kp SQT
+&kp LSHFT                     &kp Z      &kp X      &kp C     &kp V      &kp B                           &kp LALT      &lt 4 RALT                                             &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH         &kp RSHFT
+&mo 2                         &kp GRAVE  &kp LCTRL  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL       &kp LGUI      &kp RGUI    &mt LS(LA(LC(LG(LGUI)))) ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT         &mo 2
             >;
         };
 
@@ -87,6 +87,16 @@
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        custom {
+            bindings = <
+&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
