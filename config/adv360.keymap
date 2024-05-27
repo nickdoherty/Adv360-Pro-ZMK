@@ -17,6 +17,20 @@
             bindings = <&kp RET>;
         };
 
+        tmux_prefix: tmux_prefix {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B)>;
+            label = "TMUX_PREFIX";
+        };
+
+        cmd_space: cmd_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE)>;
+            label = "CMD_SPACE";
+        };
+
         #endif
 
         hm: homerow_mods {
@@ -38,11 +52,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL                     &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                          &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&mt LS(LA(LC(LG(LGUI)))) TAB  &kp Q      &kp W      &kp E     &kp R      &kp T   &none                                                                           &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&mt LCTRL ESCAPE              &kp A      &kp S      &kp D     &kp F      &kp G   &none     &mt LCTRL F2  &kp F4        &kp F3    &mt RCTRL F1                    &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT                     &kp Z      &kp X      &kp C     &kp V      &kp B                           &kp LALT      &kp RALT                                             &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2                         &kp GRAVE  &kp LCTRL  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL       &kp LGUI      &kp RGUI  &mt LS(LA(LC(LG(LGUI)))) ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL                     &kp N1     &kp N2       &kp N3    &kp N4     &kp N5  &tog 1                                                                          &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&mt LS(LA(LC(LG(LGUI)))) TAB  &kp Q      &kp W        &kp E     &kp R      &kp T   &none                                                                           &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&mt LCTRL ESCAPE              &kp A      &mt LCTRL S  &kp D     &kp F      &kp G   &none     &mt LCTRL F2  &kp F4        &kp F3    &mt RCTRL F1                    &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT                     &kp Z      &kp X        &kp C     &kp V      &kp B                           &kp LALT      &kp RALT                                             &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 2                         &kp GRAVE  &kp LCTRL    &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL       &kp LGUI      &kp RGUI  &mt LS(LA(LC(LG(LGUI)))) ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
@@ -58,11 +72,11 @@
 
         fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                             &mo 3   &kp F7  &kp F8           &kp F9             &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &none                                              &none   &trans  &trans           &trans             &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &kp PAGE_DOWN  &none   &trans  &trans           &trans             &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                         &trans  &trans           &trans             &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans         &trans          &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans   &trans   &trans
             >;
         };
 
