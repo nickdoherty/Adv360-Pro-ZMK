@@ -92,11 +92,11 @@
 
         custom {
             bindings = <
-&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &trans  &trans                                                           &trans         &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans  &trans  &trans  &trans                                                           &trans         &kp F1  &kp F1  &kp F2  &kp F3  &trans  &trans
-&trans     &trans  &trans  &trans  &trans  &trans  &trans         &trans   &trans            &trans        &trans   &trans         &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans  &trans  &trans                          &trans            &trans                                &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp DEL  &tmux_prefix      &tmux_prefix  &kp DEL  &kp BACKSPACE          &trans  &trans  &trans  &trans  &trans
+&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &trans  &trans                                                     &trans         &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &trans                                                     &trans         &trans  &kp F1  &kp F2  &kp F3  &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &trans         &trans   &trans         &trans     &trans   &trans         &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans                          &trans         &trans                             &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp DEL  &kp LC(B)      &kp LC(B)  &kp DEL  &kp BACKSPACE          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
