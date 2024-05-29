@@ -96,7 +96,7 @@
 &kp GRAVE  &trans  &trans  &trans  &trans  &trans  &trans                                                     &trans         &trans  &kp F1     &kp F2         &kp F3  &trans  &trans
 &trans     &trans  &trans  &trans  &trans  &trans  &trans         &trans   &trans         &trans     &trans   &trans         &trans  &kp J      &kp K          &kp L   &trans  &trans
 &trans     &trans  &trans  &trans  &trans  &trans                          &trans         &trans                             &trans  &trans     &trans         &trans  &trans  &trans
-&trans     &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp DEL  &kp LC(B)      &kp LC(B)  &kp DEL  &kp BACKSPACE          &kp PG_DN  &kp PAGE_DOWN  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans          &kp BACKSPACE  &kp DEL  &kp LC(B)      &kp LC(B)  &kp DEL  &kp BACKSPACE          &kp PG_UP  &kp PAGE_DOWN  &trans  &trans  &trans
             >;
         };
 
