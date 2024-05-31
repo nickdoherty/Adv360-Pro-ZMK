@@ -17,20 +17,6 @@
             bindings = <&kp RET>;
         };
 
-        tmux_prefix: tmux_prefix {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B)>;
-            label = "TMUX_PREFIX";
-        };
-
-        cmd_space: cmd_space {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(SPACE)>;
-            label = "CMD_SPACE";
-        };
-
         #endif
 
         hm: homerow_mods {
@@ -41,6 +27,8 @@
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+
+            retro-tap;
         };
     };
 
@@ -52,11 +40,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL                     &kp N1    &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                   &mo 3        &kp N6  &kp N7      &kp N8      &kp N9       &kp N0           &kp MINUS
-&mt LS(LA(LC(LG(LGUI)))) TAB  &kp Q     &kp W      &kp E     &kp R      &kp T   &tog 5                                                                   &kp LC(F11)  &kp Y   &kp U       &kp I       &kp O        &kp P            &kp BSLH
-&mt LCTRL ESCAPE              &kp A     &kp S      &kp D     &kp F      &kp G   &kp LC(F9)     &mt LCTRL F2  &kp F4        &kp F3          &mt RCTRL F1  &kp LC(F12)  &kp H   &hm RGUI J  &hm RALT K  &hm RCTRL L  &lt 4 SEMICOLON  &kp SQT
-&kp LSHFT                     &kp Z     &kp X      &kp C     &kp V      &kp B                                &kp LALT      &kp RALT                                   &kp N   &kp M       &kp COMMA   &kp DOT      &kp FSLH         &kp RSHFT
-&mo 2                         &kp LALT  &kp LCTRL  &kp LEFT  &kp RIGHT          &kp BACKSPACE  &kp DEL       &kp LGUI      &mt RGUI LC(B)  &kp ENTER     &kp SPACE            &kp UP      &kp DOWN    &kp LBKT     &kp RBKT         &mo 2
+&kp EQUAL                     &kp N1    &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                         &mo 3        &kp N6  &kp N7      &kp N8      &kp N9       &kp N0           &kp MINUS
+&mt LS(LA(LC(LG(LGUI)))) TAB  &kp Q     &kp W      &kp E     &kp R      &kp T   &tog 5                                                                         &kp LC(F11)  &kp Y   &kp U       &kp I       &kp O        &kp P            &kp BSLH
+&mt LCTRL ESCAPE              &kp A     &kp S      &kp D     &kp F      &kp G   &kp LC(F9)     &mt LCTRL F2  &kp F4              &kp F3          &mt RCTRL F1  &kp LC(F12)  &kp H   &hm RGUI J  &hm RALT K  &hm RCTRL L  &lt 4 SEMICOLON  &kp SQT
+&kp LSHFT                     &kp Z     &kp X      &kp C     &kp V      &kp B                                &kp LALT            &kp RALT                                   &kp N   &kp M       &kp COMMA   &kp DOT      &kp FSLH         &kp RSHFT
+&mo 2                         &kp LALT  &kp LCTRL  &kp LEFT  &kp RIGHT          &kp BACKSPACE  &kp DEL       &mt LGUI LC(B)      &mt RGUI LC(B)  &kp ENTER     &kp SPACE            &kp UP      &kp DOWN    &kp LBKT     &kp RBKT         &mo 2
             >;
         };
 
