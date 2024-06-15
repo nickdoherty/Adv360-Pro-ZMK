@@ -68,7 +68,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base {
             bindings = <
 &kp EQUAL                &kp N1            &kp N2    &kp N3    &kp N4     &kp N5  &tog 4                                                                                                              &mo 1                   &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                             &kp MINUS
 &kp TAB                  &kp Q             &kp W     &kp E     &kp R      &kp T   &kp LC(LS(LA(LG(F4))))                                                                                              &kp LC(LA(LS(LG(F6))))  &kp Y   &kp U   &kp I      &kp O     &kp P                              &kp BSLH
@@ -94,7 +94,7 @@
 &kp F7   &kp F8   &kp F9   &kp F10  &kp F11  &kp F12  &none                                               &none   &trans  &trans           &trans             &trans    &trans          &trans
 &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18  &none   &trans   &trans      &trans  &kp PAGE_DOWN  &none   &trans  &trans           &trans             &trans    &trans          &trans
 &trans   &trans   &trans   &trans   &trans   &trans                    &trans      &trans                         &trans  &trans           &trans             &trans    &kp UP_ARROW    &trans
-&trans   &trans   &trans   &trans   &trans            &trans  &kp DEL  &trans      &trans  &trans         &trans          &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT
+&trans   &trans   &kp F1   &kp F2   &kp F3            &trans  &kp DEL  &trans      &trans  &trans         &trans          &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT
             >;
         };
 
