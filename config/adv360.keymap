@@ -70,11 +70,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL                &kp N1            &kp N2    &kp N3    &kp N4     &kp N5  &tog 4                                                                                           &mo 1                   &kp N6  &kp N7  &kp N8     &kp N9                     &kp N0         &kp MINUS
-&kp TAB                  &kp Q             &kp W     &kp E     &kp R      &kp T   &kp LC(LS(LA(LG(F4))))                                                                           &kp LC(LA(LS(LG(F6))))  &kp Y   &kp U   &kp I      &kp O                      &kp P          &kp BSLH
-&mt LEFT_CONTROL ESCAPE  &kp A             &kp S     &kp D     &kp F      &kp G   &kp LC(F9)              &mt LCTRL F2              &kp F4            &kp F3         &mt RCTRL F1  &kp LC(F12)             &kp H   &kp J   &kp K      &home_row RIGHT_COMMAND L  &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT           &kp Z             &kp X     &kp C     &kp V      &kp B                                                     &kp LALT          &kp RIGHT_ALT                                        &kp N   &kp M   &kp COMMA  &kp DOT                    &kp FSLH       &kp RIGHT_SHIFT
-&mo 2                    &kp LEFT_CONTROL  &kp LGUI  &kp LEFT  &kp RIGHT          &mo_backspace 3 0       &home_row LEFT_ALT LC(B)  &kp LEFT_GUI      &kp RIGHT_GUI  &kp ENTER     &kp SPACE                       &kp UP  &kp DOWN   &kp LBKT                   &kp RBKT       &mo 2
+&kp EQUAL                &kp N1            &kp N2    &kp N3    &kp N4     &kp N5  &tog 4                                                                                                              &mo 1                   &kp N6  &kp N7  &kp N8     &kp N9                     &kp N0         &kp MINUS
+&kp TAB                  &kp Q             &kp W     &kp E     &kp R      &kp T   &kp LC(LS(LA(LG(F4))))                                                                                              &kp LC(LA(LS(LG(F6))))  &kp Y   &kp U   &kp I      &kp O                      &kp P          &kp BSLH
+&mt LEFT_CONTROL ESCAPE  &kp A             &kp S     &kp D     &kp F      &kp G   &kp LC(F9)              &mt LCTRL F2              &kp F4            &kp F3         &mt RCTRL F1                     &kp LC(F12)             &kp H   &kp J   &kp K      &home_row RIGHT_COMMAND L  &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT           &kp Z             &kp X     &kp C     &kp V      &kp B                                                     &kp LALT          &kp RIGHT_ALT                                                           &kp N   &kp M   &kp COMMA  &kp DOT                    &kp FSLH       &kp RIGHT_SHIFT
+&mo 2                    &kp LEFT_CONTROL  &kp LGUI  &kp LEFT  &kp RIGHT          &mo_backspace 3 0       &home_row LEFT_ALT LC(B)  &kp LEFT_GUI      &kp RIGHT_GUI  &mt ENTER RS(RA(RC(RIGHT_GUI)))  &kp SPACE                       &kp UP  &kp DOWN   &kp LBKT                   &kp RBKT       &mo 2
             >;
         };
 
@@ -100,11 +100,11 @@
 
         custom {
             bindings = <
-&kp TILDE  &kp F1     &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                                      &kp F7  &kp F8  &kp F9     &kp F10        &kp F11     &kp F12  &kp F13
-&kp GRAVE  &trans     &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &kp F1     &kp F2         &kp F3      &kp F4   &kp F5
-&trans     &kp CARET  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans     &trans         &kp DOLLAR  &trans   &trans
-&trans     &trans     &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans     &trans         &trans      &trans   &trans
-&trans     &trans     &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &kp PG_UP  &kp PAGE_DOWN  &trans      &trans   &trans
+&kp TILDE  &kp F1     &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                                      &kp F7  &kp F8                &kp F9                 &kp F10        &kp F11     &kp F12  &kp BACKSPACE
+&kp GRAVE  &trans     &trans  &trans  &trans  &trans  &trans                                      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F2         &kp F3      &kp F4   &kp F5
+&trans     &kp CARET  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &kp DOLLAR  &trans   &trans
+&trans     &trans     &trans  &trans  &trans  &trans                  &trans      &trans                  &trans                &trans                 &trans         &trans      &trans   &trans
+&trans     &trans     &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &kp PG_UP              &kp PAGE_DOWN  &trans      &trans   &trans
             >;
         };
 
