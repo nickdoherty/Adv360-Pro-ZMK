@@ -123,7 +123,7 @@
         symbol {
             bindings = <
 &kp TILDE  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6                                                            &kp F7                        &kp F8                &kp F9                 &kp F10        &kp F11  &kp F12  &kp BACKSPACE
-&kp GRAVE  &trans     &trans     &trans     &trans     &kp LG(T)  &kp LS(LA(LC(LG(NUMBER_4))))                                      &kp RS(RC(RA(RG(NUMBER_6))))  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans   &trans   &kp DELETE
+&kp GRAVE  &kp LG(Q)  &trans     &trans     &trans     &kp LG(T)  &kp LS(LA(LC(LG(NUMBER_4))))                                      &kp RS(RC(RA(RG(NUMBER_6))))  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans   &trans   &kp DELETE
 &kp CARET  &kp LG(A)  &kp LG(S)  &trans     &trans     &trans     &kp LC(F9)                    &trans  &trans      &trans  &trans  &kp RS(RA(RC(RG(F12))))       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &trans   &trans   &kp DOLLAR
 &trans     &trans     &trans     &kp LG(C)  &kp LG(V)  &trans                                           &trans      &trans                                        &trans                &trans                 &trans         &trans   &trans   &trans
 &trans     &trans     &trans     &trans     &trans                &trans                        &trans  &trans      &trans  &trans  &trans                                              &kp PG_UP              &kp PAGE_DOWN  &trans   &trans   &trans
