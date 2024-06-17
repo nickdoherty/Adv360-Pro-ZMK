@@ -60,6 +60,18 @@
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
         };
+
+        mo_space: mo_space {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_SPACE";
+            bindings = <&mo>, <&backspace_delete>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
+        };
     };
 
     macros {
@@ -70,11 +82,11 @@
 
         base {
             bindings = <
-&kp EQUAL                &kp N1            &kp N2    &kp N3    &kp N4     &kp N5  &tog 4                                                                                                              &mo 1                   &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                             &kp MINUS
-&kp TAB                  &kp Q             &kp W     &kp E     &kp R      &kp T   &kp LC(LS(LA(LG(F4))))                                                                                              &kp LC(LA(LS(LG(F6))))  &kp Y   &kp U   &kp I      &kp O     &kp P                              &kp BSLH
-&mt LEFT_CONTROL ESCAPE  &kp A             &kp S     &kp D     &kp F      &kp G   &kp LC(F9)              &mt LCTRL F2              &kp F4            &kp F3         &mt RCTRL F1                     &kp LC(F12)             &kp H   &kp J   &kp K      &kp L     &home_row RIGHT_COMMAND SEMICOLON  &kp SQT
-&kp LEFT_SHIFT           &kp Z             &kp X     &kp C     &kp V      &kp B                                                     &kp LALT          &kp RIGHT_ALT                                                           &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH                           &kp RIGHT_SHIFT
-&mo 2                    &kp LEFT_CONTROL  &kp LGUI  &kp LEFT  &kp RIGHT          &mo_backspace 3 0       &home_row LEFT_ALT LC(B)  &kp LEFT_GUI      &kp RIGHT_GUI  &mt RS(RA(RC(RIGHT_GUI))) ENTER  &kp SPACE                       &kp UP  &kp DOWN   &kp LBKT  &kp RBKT                           &mo 2
+&kp EQUAL       &kp N1            &kp N2    &kp N3    &kp N4     &kp N5  &tog 4                                                                                                             &mo 1      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                             &kp MINUS
+&kp TAB         &kp Q             &kp W     &kp E     &kp R      &kp T   &none                                                                                                              &none      &kp Y   &kp U   &kp I      &kp O     &kp P                              &kp BSLH
+&kp ESCAPE      &kp A             &kp S     &kp D     &kp F      &kp G   &none              &mt LEFT_ALT F2               &kp F4            &kp F3         &mt RIGHT_ALT F1                 &none      &kp H   &kp J   &kp K      &kp L     &home_row RIGHT_COMMAND SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z             &kp X     &kp C     &kp V      &kp B                                                    &kp LC(F12)       &kp RC(F12)                                                &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH                           &kp RIGHT_SHIFT
+&mo 2           &kp LEFT_CONTROL  &kp LGUI  &kp LEFT  &kp RIGHT          &mo_backspace 3 0  &home_row LEFT_CONTROL LC(B)  &kp LEFT_GUI      &kp RIGHT_GUI  &mt RS(RA(RC(RIGHT_GUI))) ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT                           &mo 2
             >;
         };
 
@@ -100,11 +112,11 @@
 
         symbol {
             bindings = <
-&kp TILDE  &kp F1     &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                                      &kp F7  &kp F8                &kp F9                 &kp F10        &kp F11     &kp F12  &kp BACKSPACE
-&kp GRAVE  &trans     &trans  &trans  &trans  &trans  &trans                                      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F2         &kp F3      &kp F4   &kp F5
-&trans     &kp CARET  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &kp DOLLAR  &trans   &trans
-&trans     &trans     &trans  &trans  &trans  &trans                  &trans      &trans                  &trans                &trans                 &trans         &trans      &trans   &trans
-&trans     &trans     &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                        &kp PG_UP              &kp PAGE_DOWN  &trans      &trans   &trans
+&kp TILDE  &kp F1     &kp F2  &kp F3     &kp F4     &kp F5  &kp F6                                                            &kp F7                        &kp F8                &kp F9                 &kp F10        &kp F11     &kp F12  &kp BACKSPACE
+&kp GRAVE  &trans     &trans  &trans     &trans     &trans  &kp LS(LA(LC(LG(NUMBER_4))))                                      &kp RS(RC(RA(RG(NUMBER_6))))  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans      &trans   &kp DELETE
+&trans     &kp CARET  &trans  &trans     &trans     &trans  &kp LC(F9)                    &trans  &trans      &trans  &trans  &kp RS(RA(RC(RG(F12))))       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &kp DOLLAR  &trans   &trans
+&trans     &trans     &trans  &kp LG(C)  &kp LG(V)  &trans                                        &trans      &trans                                        &trans                &trans                 &trans         &trans      &trans   &trans
+&trans     &trans     &trans  &trans     &trans             &trans                        &trans  &trans      &trans  &trans  &trans                                              &kp PG_UP              &kp PAGE_DOWN  &trans      &trans   &trans
             >;
         };
 
