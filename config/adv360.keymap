@@ -103,6 +103,15 @@
     macros {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        tmux {
+            bindings = <&tmux_prefix>;
+            key-positions = <65 70>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
