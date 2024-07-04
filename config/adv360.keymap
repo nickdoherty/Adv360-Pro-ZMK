@@ -147,11 +147,11 @@
 
         action {
             bindings = <
-&kp TILDE  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)  &kp LG(NUMBER_6)                                                                                                       &trans                        &trans     &trans     &trans          &trans        &trans         &kp BACKSPACE
-&kp GRAVE  &kp LG(Q)         &kp LG(W)         &trans            &kp LG(R)         &kp LG(T)   &kp LS(LA(LC(LG(NUMBER_4))))                                                                                           &kp RS(RC(RA(RG(NUMBER_6))))  &trans     &trans     &kp UP_ARROW    &trans        &trans         &kp DELETE
-&kp CARET  &kp LG(A)         &kp LG(S)         &kp LG(D)         &kp LG(F)         &trans      &kp LC(F9)                    &trans  &trans      &kp LS(LA(LC(LG(LEFT_BRACKET))))  &kp RS(RA(RC(RG(RIGHT_BRACKET))))  &kp RC(F12)                   &kp LG(H)  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT     &trans         &kp DOLLAR
-&trans     &kp LG(Z)         &kp LG(X)         &kp LG(C)         &kp LG(V)         &trans                                            &trans      &kp LG(F1)                                                                                         &trans     &trans     &trans          &trans        &kp RG(SLASH)  &trans
-&trans     &kp F1            &kp F2            &kp F3            &kp F4                        &trans                        &trans  &trans      &trans                            &trans                             &kp LG(SPACE)                            &kp PG_UP  &kp PAGE_DOWN   &kp LC(DOWN)  &kp LC(SPACE)  &trans
+&kp TILDE  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)  &kp LG(NUMBER_6)                                                                                                       &kp LG(MINUS)                 &kp LG(PLUS)  &trans     &trans          &trans        &trans         &kp BACKSPACE
+&kp GRAVE  &kp LG(Q)         &kp LG(W)         &trans            &kp LG(R)         &kp LG(T)   &kp LS(LA(LC(LG(NUMBER_4))))                                                                                           &kp RS(RC(RA(RG(NUMBER_6))))  &trans        &trans     &kp UP_ARROW    &trans        &trans         &kp DELETE
+&kp CARET  &kp LG(A)         &kp LG(S)         &kp LG(D)         &kp LG(F)         &trans      &kp LC(F9)                    &trans  &trans      &kp LS(LA(LC(LG(LEFT_BRACKET))))  &kp RS(RA(RC(RG(RIGHT_BRACKET))))  &kp RC(F12)                   &kp LG(H)     &kp LEFT   &kp DOWN_ARROW  &kp RIGHT     &trans         &kp DOLLAR
+&trans     &kp LG(Z)         &kp LG(X)         &kp LG(C)         &kp LG(V)         &trans                                            &trans      &kp LG(F1)                                                                                         &trans        &trans     &trans          &trans        &kp RG(SLASH)  &trans
+&trans     &kp F1            &kp F2            &kp F3            &kp F4                        &trans                        &trans  &trans      &trans                            &trans                             &kp LG(SPACE)                               &kp PG_UP  &kp PAGE_DOWN   &kp LC(DOWN)  &kp LC(SPACE)  &trans
             >;
         };
 
@@ -167,11 +167,11 @@
 
         symbol {
             bindings = <
-&trans     &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS      &kp MINUS
-&trans     &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK  &kp SLASH
-&kp CARET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans        &kp DOLLAR
-&trans     &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &kp LESS_THAN         &kp GREATER_THAN       &trans        &trans
-&trans     &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans                &trans                 &trans        &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &trans                                      &kp LG(MINUS)  &kp LG(PLUS)  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS      &kp MINUS
+&trans     &trans  &trans  &trans  &trans  &trans  &trans                                      &trans         &trans        &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK  &kp SLASH
+&kp CARET  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans         &trans        &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans        &kp DOLLAR
+&trans     &trans  &trans  &trans  &trans  &trans                  &trans      &trans                         &trans        &trans  &kp LESS_THAN         &kp GREATER_THAN       &trans        &trans
+&trans     &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans                       &trans  &trans                &trans                 &trans        &trans
             >;
         };
     };
