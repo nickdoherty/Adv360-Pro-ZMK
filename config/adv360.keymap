@@ -23,9 +23,12 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <150>;
+            hold-trigger-on-release;
         };
 
         backspace_delete: backspace_delete {
@@ -98,6 +101,15 @@
             #binding-cells = <0>;
             bindings = <&none>, <&kp LC(B)>;
         };
+
+        td_cmd: td_cmd {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CMD";
+            #binding-cells = <0>;
+            bindings = <&hm LEFT_GUI BACKSPACE>, <&mo 3>;
+
+            tapping-term-ms = <175>;
+        };
     };
 
     macros {
@@ -117,11 +129,11 @@
 
         base {
             bindings = <
-&kp EQUAL                      &kp N1            &kp N2    &kp N3    &kp N4     &kp N5  &tog 4                                                                                                                         &mo 1      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                             &kp MINUS
-&kp TAB                        &kp Q             &kp W     &kp E     &kp R      &kp T   &none                                                                                                                          &none      &kp Y   &kp U   &kp I      &kp O     &kp P                              &kp BACKSLASH
-&home_row LEFT_CONTROL ESCAPE  &kp A             &kp S     &kp D     &kp F      &kp G   &none   &mt LEFT_CONTROL F2  &kp F4                            &kp F3                         &mt RIGHT_CONTROL F1             &none      &kp H   &kp J   &kp K      &kp L     &home_row RIGHT_COMMAND SEMICOLON  &kp SQT
-&kp LEFT_SHIFT                 &kp Z             &kp X     &kp C     &kp V      &kp B                                &kp LEFT_ALT                      &kp RIGHT_ALT                                                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH                           &kp RIGHT_SHIFT
-&mo 3                          &kp LEFT_CONTROL  &kp LGUI  &kp LEFT  &kp RIGHT          &mo 3   &mo 5                &home_row LEFT_COMMAND LC(B)      &home_row RIGHT_COMMAND LC(B)  &mt RS(RA(RC(RIGHT_GUI))) ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT                           &mo 3
+&kp EQUAL                      &kp N1            &kp N2    &kp N3    &kp N4     &kp N5  &tog 4                                                                                                                          &mo 1      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0                             &kp MINUS
+&kp TAB                        &kp Q             &kp W     &kp E     &kp R      &kp T   &none                                                                                                                           &none      &kp Y   &kp U   &kp I      &kp O     &kp P                              &kp BACKSLASH
+&home_row LEFT_CONTROL ESCAPE  &kp A             &kp S     &kp D     &kp F      &kp G   &none    &mt LEFT_CONTROL F2  &kp F4                            &kp F3                         &mt RIGHT_CONTROL F1             &none      &kp H   &kp J   &kp K      &kp L     &home_row RIGHT_COMMAND SEMICOLON  &kp SQT
+&kp LEFT_SHIFT                 &kp Z             &kp X     &kp C     &kp V      &kp B                                 &kp LEFT_ALT                      &kp RIGHT_ALT                                                              &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH                           &kp RIGHT_SHIFT
+&mo 3                          &kp LEFT_CONTROL  &kp LGUI  &kp LEFT  &kp RIGHT          &td_cmd  &mo 5                &home_row LEFT_COMMAND LC(B)      &home_row RIGHT_COMMAND LC(B)  &mt RS(RA(RC(RIGHT_GUI))) ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT                           &mo 3
             >;
         };
 
