@@ -141,7 +141,12 @@
 
         tmux {
             bindings = <&kp LC(B)>;
-            key-positions = <65 70>;
+            key-positions = <70 65>;
+        };
+
+        CMD {
+            bindings = <&kp LGUI>;
+            key-positions = <65 69>;
         };
     };
 
