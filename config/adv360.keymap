@@ -95,7 +95,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
             quick-tap-ms = <150>;
             hold-trigger-on-release;
         };
@@ -127,7 +127,7 @@
         compatible = "zmk,combos";
 
         tmux {
-            bindings = <&kp LC(B)>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <70 65>;
         };
 
@@ -192,11 +192,11 @@
 
         symbol {
             bindings = <
-&kp TILDE  &trans        &trans        &trans        &trans        &trans  &trans                                             &kp LG(MINUS)  &kp LG(PLUS)  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-&kp GRAVE  &trans        &trans        &trans        &trans        &trans  &trans                                             &trans         &trans        &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DEL
-&kp CARET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans  &trans  &trans      &trans  &trans         &trans         &kp NUMBER_6  &kp N7          &kp N8            &kp N9                &kp N0                 &kp DOLLAR
-&trans     &trans        &trans        &trans        &trans        &trans                  &trans      &trans                                &trans        &trans          &kp LESS_THAN     &kp GREATER_THAN      &trans                 &trans
-&trans     &trans        &trans        &trans        &trans                &trans  &trans  &trans      &trans  &kp BACKSPACE  &kp DEL                      &trans          &trans            &trans                &trans                 &trans
+&kp TILDE  &trans        &trans        &trans        &trans        &trans  &trans                                                 &kp LG(MINUS)  &kp LG(PLUS)  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+&kp GRAVE  &trans        &trans        &trans        &trans        &trans  &trans                                                 &trans         &trans        &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DEL
+&kp CARET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans         &trans  &trans      &trans  &trans      &trans         &kp NUMBER_6  &kp N7          &kp N8            &kp N9                &kp N0                 &kp DOLLAR
+&trans     &trans        &trans        &trans        &trans        &trans                         &trans      &trans                             &trans        &trans          &kp LESS_THAN     &kp GREATER_THAN      &trans                 &trans
+&trans     &trans        &trans        &trans        &trans                &kp BACKSPACE  &trans  &trans      &trans  &kp DELETE  &kp BACKSPACE                &trans          &trans            &trans                &trans                 &trans
             >;
         };
     };
