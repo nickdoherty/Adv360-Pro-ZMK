@@ -191,11 +191,11 @@
 
         symbol {
             bindings = <
-&kp TILDE  &trans        &trans        &trans        &trans        &trans  &trans                                                 &kp LG(MINUS)  &kp LG(PLUS)  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-&kp GRAVE  &trans        &trans        &trans        &trans        &trans  &trans                                                 &trans         &trans        &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DEL
-&kp CARET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans         &trans  &trans      &trans  &trans      &trans         &kp NUMBER_6  &kp N7          &kp N8            &kp N9                &kp N0                 &kp DOLLAR
-&trans     &trans        &trans        &trans        &trans        &trans                         &trans      &trans                             &trans        &trans          &kp LESS_THAN     &kp GREATER_THAN      &trans                 &trans
-&trans     &trans        &trans        &trans        &trans                &kp BACKSPACE  &trans  &trans      &trans  &kp DELETE  &kp BACKSPACE                &trans          &trans            &trans                &trans                 &trans
+&kp TILDE  &kp F1                &kp F2          &kp F3         &kp F4            &kp F5  &trans                                                 &trans         &kp F6        &kp F9             &kp F8            &kp F9            &kp F10                &kp BACKSPACE
+&kp GRAVE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LESS_THAN  &kp LEFT_BRACKET  &trans  &trans                                                 &trans         &trans        &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp RIGHT_BRACE   &kp RIGHT_PARENTHESIS  &kp DEL
+&kp CARET  &kp NUMBER_1          &kp NUMBER_2    &kp NUMBER_3   &kp NUMBER_4      &kp N5  &trans         &trans  &trans      &trans  &trans      &trans         &kp NUMBER_6  &kp N7             &kp N8            &kp N9            &kp N0                 &kp DOLLAR
+&trans     &trans                &trans          &trans         &trans            &trans                         &trans      &trans                             &trans        &trans             &kp LESS_THAN     &kp GREATER_THAN  &trans                 &trans
+&trans     &trans                &trans          &trans         &trans                    &kp BACKSPACE  &trans  &trans      &trans  &kp DELETE  &kp BACKSPACE                &trans             &trans            &trans            &trans                 &trans
             >;
         };
     };
