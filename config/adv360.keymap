@@ -144,7 +144,7 @@
 &kp EQUAL                      &kp N1  &kp N2    &kp N3    &kp N4     &kp N5  &tog 4                                                                                                      &mo 1                             &kp N6  &kp N7  &kp N8     &kp N9    &kp N0               &kp MINUS
 &kp TAB                        &kp Q   &kp W     &kp E     &kp R      &kp T   &none                                                                                                       &none                             &kp Y   &kp U   &kp I      &kp O     &kp P                &kp BACKSLASH
 &home_row LEFT_CONTROL ESCAPE  &kp A   &kp S     &kp D     &kp F      &kp G   &mo 5                       &kp F2             &kp F4            &kp F3                    &kp F1           &none                             &kp H   &kp J   &kp K      &kp L     &mo_tap 5 SEMICOLON  &kp SQT
-&kp LEFT_SHIFT                 &kp Z   &kp X     &kp C     &kp V      &kp B                                                  &kp LEFT_ALT      &kp LG(RIGHT_ALT)                                                            &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH             &kp RIGHT_SHIFT
+&kp LEFT_SHIFT                 &kp Z   &kp X     &kp C     &kp V      &kp B                                                  &kp LEFT_ALT      &kp RIGHT_ALT                                                                &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH             &kp RIGHT_SHIFT
 &mo 5                          &mo 2   &kp LGUI  &kp LEFT  &kp RIGHT          &hold_kp_tap_sl LEFT_GUI 3  &backspace_delete  &mo 5             &home_row LEFT_GUI LC(B)  &mo_tap 5 ENTER  &home_row LS(LA(LC(LGUI))) SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT             &mo 3
             >;
         };
