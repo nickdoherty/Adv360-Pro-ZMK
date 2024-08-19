@@ -175,7 +175,7 @@
 &kp GRAVE  &kp LG(Q)         &kp LG(W)         &trans            &kp LG(R)         &kp LG(T)   &kp LS(LA(LC(LG(NUMBER_4))))                                                                                                  &kp RS(RC(RA(RG(NUMBER_6))))  &trans        &kp HOME       &kp UP_ARROW       &kp END       &kp LG(P)      &kp DELETE
 &kp CARET  &kp LG(A)         &kp LG(S)         &kp LG(D)         &kp LG(F)         &trans      &kp LC(F9)                    &kp F3         &kp F4      &kp LS(LA(LC(LG(LEFT_BRACKET))))  &kp RS(RA(RC(RG(RIGHT_BRACKET))))  &kp RC(F12)                   &kp LG(H)     &kp LEFT       &kp DOWN_ARROW     &kp RIGHT     &trans         &kp DOLLAR
 &trans     &kp LG(Z)         &kp LG(X)         &kp LG(C)         &kp LG(V)         &kp LG(B)                                                &trans      &kp LG(F1)                                                                                         &trans        &trans         &trans             &trans        &kp RG(SLASH)  &trans
-&trans     &kp F1            &kp F2            &kp F3            &kp F4                        &trans                        &kp BACKSPACE  &trans      &trans                            &kp DEL                            &kp BACKSPACE                               &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &kp LC(DOWN)  &kp LC(SPACE)  &trans
+&trans     &kp F1            &kp F2            &kp F3            &kp F4                        &trans                        &kp BACKSPACE  &trans      &trans                            &kp DEL                            &kp LG(SPACE)                               &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &kp LC(DOWN)  &kp LC(SPACE)  &trans
             >;
         };
 
