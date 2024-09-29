@@ -81,7 +81,7 @@
         mod_backspace_mo: mod_backspace_mo {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_BACKSPACE_MO";
-            bindings = <&mo 3>, <&kp BACKSPACE>;
+            bindings = <&mo 0>, <&kp BACKSPACE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -104,7 +104,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CMD_MO";
             #binding-cells = <0>;
-            bindings = <&home_row LEFT_GUI BACKSPACE>, <&sl 3>;
+            bindings = <&home_row LEFT_GUI BACKSPACE>, <&sl 0>;
 
             tapping-term-ms = <200>;
         };
@@ -141,11 +141,11 @@
 
         base {
             bindings = <
-&kp EQUAL                      &kp N1  &kp N2        &kp N3    &kp N4     &kp N5  &tog 4                                                                                                           &mo 1                     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0               &kp MINUS
-&kp TAB                        &kp Q   &kp W         &kp E     &kp R      &kp T   &kp LG(LS(LEFT_CONTROL))                                                                                         &kp LG(LS(LEFT_CONTROL))  &kp Y   &kp U   &kp I      &kp O     &kp P                &kp BACKSLASH
-&home_row LEFT_CONTROL ESCAPE  &kp A   &kp S         &kp D     &kp F      &kp G   &kp LG(LEFT_CONTROL)      &kp F2             &kp F4                    &kp F3                         &kp F1     &kp LG(LEFT_CONTROL)      &kp H   &kp J   &kp K      &kp L     &mo_tap 5 SEMICOLON  &kp SQT
-&kp LEFT_SHIFT                 &kp Z   &kp X         &kp C     &kp V      &kp B                                                &kp LEFT_ALT              &kp LG(LA(LS(RIGHT_CONTROL)))                                       &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH             &kp RIGHT_SHIFT
-&mo 3                          &mo 2   &kp LEFT_ALT  &kp LEFT  &kp RIGHT          &kp LEFT_GUI              &backspace_delete  &kp LG(LEFT_CONTROL)      &kp LC(B)                      &kp ENTER  &kp SPACE                         &kp UP  &kp DOWN   &kp LBKT  &kp RBKT             &mo 3
+&kp EQUAL                      &kp N1  &kp N2        &kp N3    &kp N4     &kp N5  &tog 2                                                                                                                   &mo 1                     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0               &kp MINUS
+&kp TAB                        &kp Q   &kp W         &kp E     &kp R      &kp T   &kp LG(LS(LEFT_CONTROL))                                                                                                 &kp LG(LS(LEFT_CONTROL))  &kp Y   &kp U   &kp I      &kp O     &kp P                &kp BACKSLASH
+&home_row LEFT_CONTROL ESCAPE  &kp A   &kp S         &kp D     &kp F      &kp G   &kp LG(LEFT_CONTROL)      &kp F2             &kp F4                            &kp F3                         &kp F1     &kp LG(LEFT_CONTROL)      &kp H   &kp J   &kp K      &kp L     &mo_tap 3 SEMICOLON  &kp SQT
+&kp LEFT_SHIFT                 &kp Z   &kp X         &kp C     &kp V      &kp B                                                &kp LG(LA(LS(LEFT_CONTROL)))      &kp LG(LA(LS(RIGHT_CONTROL)))                                       &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH             &kp RIGHT_SHIFT
+&kp LEFT_CONTROL               &mo 4   &kp LEFT_ALT  &kp LEFT  &kp RIGHT          &kp LEFT_GUI              &backspace_delete  &mo_tap 4 LC(B)                   &mo_tap 4 LC(B)                &kp ENTER  &kp SPACE                         &kp UP  &kp DOWN   &kp LBKT  &kp RBKT             &mo 3
             >;
         };
 
@@ -159,33 +159,13 @@
             >;
         };
 
-        fn {
-            bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6   &tog 4                                              &mo 1   &kp F7  &kp F8           &kp F9             &kp F10   &kp F11         &kp F12
-&kp F7   &kp F8   &kp F9   &kp F10  &kp F11  &kp F12  &none                                               &none   &trans  &trans           &trans             &trans    &trans          &trans
-&kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &kp F18  &none   &trans   &trans      &trans  &kp PAGE_DOWN  &none   &trans  &trans           &trans             &trans    &trans          &trans
-&trans   &trans   &trans   &trans   &trans   &trans                    &trans      &trans                         &trans  &trans           &trans             &trans    &kp UP_ARROW    &trans
-&trans   &trans   &kp F1   &kp F2   &kp F3            &trans  &kp DEL  &trans      &trans  &trans         &trans          &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT
-            >;
-        };
-
-        action {
-            bindings = <
-&kp TILDE  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)  &kp LG(NUMBER_6)                                                                                                              &kp LG(MINUS)                 &kp LG(PLUS)  &kp C_MUTE     &kp C_VOLUME_UP    &kp C_VOL_DN  &trans         &kp BACKSPACE
-&kp GRAVE  &kp LG(Q)         &kp LG(W)         &trans            &kp LG(R)         &kp LG(T)   &kp LS(LA(LC(LG(NUMBER_4))))                                                                                                  &kp RS(RC(RA(RG(NUMBER_6))))  &trans        &kp HOME       &kp UP_ARROW       &kp END       &kp LG(P)      &kp DELETE
-&kp CARET  &kp LG(A)         &kp LG(S)         &kp LG(D)         &kp LG(F)         &trans      &kp LC(F9)                    &kp F3         &kp F4      &kp LS(LA(LC(LG(LEFT_BRACKET))))  &kp RS(RA(RC(RG(RIGHT_BRACKET))))  &kp RC(F12)                   &kp LG(H)     &kp LEFT       &kp DOWN_ARROW     &kp RIGHT     &trans         &kp DOLLAR
-&trans     &kp LG(Z)         &kp LG(X)         &kp LG(C)         &kp LG(V)         &kp LG(B)                                                &trans      &kp LG(F1)                                                                                         &trans        &trans         &trans             &trans        &kp RG(SLASH)  &trans
-&trans     &kp F1            &kp F2            &kp F3            &kp F4                        &trans                        &kp BACKSPACE  &trans      &trans                            &kp DEL                            &kp LG(SPACE)                               &kp LC(PG_UP)  &kp LC(PAGE_DOWN)  &kp LC(DOWN)  &kp LC(SPACE)  &trans
-            >;
-        };
-
         keypad {
             bindings = <
 &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 1      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 3      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 3
+&mo 0      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 0
             >;
         };
 
@@ -196,6 +176,16 @@
 &kp CARET  &kp NUMBER_1          &kp NUMBER_2    &kp NUMBER_3   &kp NUMBER_4      &kp N5  &trans         &trans  &trans      &trans  &trans      &trans         &kp NUMBER_6  &kp N7             &kp N8            &kp N9            &kp N0                 &kp DOLLAR
 &trans     &trans                &trans          &trans         &trans            &trans                         &trans      &trans                             &trans        &trans             &kp LESS_THAN     &kp GREATER_THAN  &trans                 &trans
 &trans     &trans                &trans          &trans         &trans                    &kp BACKSPACE  &trans  &trans      &trans  &kp DELETE  &kp BACKSPACE                &trans             &trans            &trans            &trans                 &trans
+            >;
+        };
+
+        fn {
+            bindings = <
+&kp TILDE  &kp LG(LC(NUMBER_1))  &kp LG(LC(NUMBER_2))  &kp LC(LG(NUMBER_3))  &kp LG(LC(NUMBER_4))  &kp LG(LC(N5))  &none                                  &none              &kp LG(LC(LS(NUMBER_1)))  &kp LG(LC(LS(NUMBER_2)))  &kp LC(LS(LG(NUMBER_3)))  &kp LG(LC(LS(NUMBER_4)))  &kp LG(LC(LS(N5)))         &none
+&kp GRAVE  &none                 &none                 &none                 &none                 &none           &none                                  &kp LG(LC(COMMA))  &kp LG(LC(LS(H)))         &kp LG(LC(LS(J)))         &kp LG(LC(LS(K)))         &kp LG(LC(LS(L)))         &none                      &none
+&none      &none                 &none                 &none                 &kp LG(LC(F))         &none           &none  &none  &none      &none  &none  &kp LG(LC(SLASH))  &kp LG(LC(H))             &kp LC(LG(K))             &kp LG(LC(K))             &kp LG(LC(L))             &kp LC(LS(LG(SEMICOLON)))  &none
+&none      &kp LG(LC(Z))         &none                 &none                 &none                 &none                         &none      &none                            &none                     &none                     &kp UP_ARROW              &none                     &none                      &none
+&none      &none                 &none                 &none                 &none                                 &none  &none  &none      &none  &none  &none                                        &kp LEFT_ARROW            &kp DOWN                  &kp RIGHT                 &none                      &none
             >;
         };
     };
