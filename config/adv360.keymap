@@ -172,11 +172,11 @@
 
         symbol {
             bindings = <
-&kp TILDE  &kp F1                &kp F2          &kp F3         &kp F4            &kp F5  &trans                                      &trans  &kp F6        &kp F7             &kp F8            &kp F9            &kp F10                &kp BACKSPACE
-&kp GRAVE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LESS_THAN  &kp LEFT_BRACKET  &trans  &trans                                      &trans  &trans        &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp RIGHT_BRACE   &kp RIGHT_PARENTHESIS  &kp DEL
-&kp CARET  &kp NUMBER_1          &kp NUMBER_2    &kp NUMBER_3   &kp NUMBER_4      &kp N5  &trans  &trans  &trans      &trans  &trans  &trans  &kp NUMBER_6  &kp N7             &kp N8            &kp N9            &kp N0                 &kp DOLLAR
-&trans     &trans                &trans          &trans         &trans            &trans                  &trans      &trans                  &trans        &trans             &kp LESS_THAN     &kp GREATER_THAN  &trans                 &trans
-&trans     &trans                &trans          &trans         &trans                    &trans  &trans  &trans      &trans  &trans  &trans                &trans             &trans            &trans            &trans                 &trans
+&kp TILDE  &kp F1                &kp F2          &kp F3         &kp F4            &kp F5  &trans                                         &trans     &kp F6        &kp F7             &kp F8            &kp F9            &kp F10                &kp BACKSPACE
+&kp GRAVE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LESS_THAN  &kp LEFT_BRACKET  &trans  &kp LG(C)                                      &kp LG(V)  &trans        &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp RIGHT_BRACE   &kp RIGHT_PARENTHESIS  &kp DEL
+&kp CARET  &kp NUMBER_1          &kp NUMBER_2    &kp NUMBER_3   &kp NUMBER_4      &kp N5  &trans     &trans  &trans      &trans  &trans  &trans     &kp NUMBER_6  &kp N7             &kp N8            &kp N9            &kp N0                 &kp DOLLAR
+&trans     &trans                &trans          &trans         &trans            &trans                     &trans      &trans                     &trans        &trans             &kp LESS_THAN     &kp GREATER_THAN  &trans                 &trans
+&trans     &trans                &trans          &trans         &trans                    &trans     &trans  &trans      &trans  &trans  &trans                   &trans             &trans            &trans            &trans                 &trans
             >;
         };
 
@@ -187,6 +187,16 @@
 &none      &none                 &none                 &none                 &kp LG(LC(F))         &none           &none  &none  &none      &none  &none  &kp LG(LC(SLASH))  &kp LG(LC(H))             &kp LC(LG(K))             &kp LG(LC(K))             &kp LG(LC(L))             &kp LC(LS(LG(SEMICOLON)))  &none
 &none      &kp LG(LC(Z))         &none                 &none                 &none                 &none                         &none      &none                            &none                     &none                     &kp UP_ARROW              &none                     &kp LG(LC(LS(Z)))          &none
 &none      &none                 &none                 &none                 &none                                 &none  &none  &none      &none  &none  &none                                        &kp LEFT_ARROW            &kp DOWN                  &kp RIGHT                 &none                      &none
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
