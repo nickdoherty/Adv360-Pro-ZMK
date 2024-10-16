@@ -144,29 +144,7 @@
     macros {
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        tmux {
-            bindings = <&kp F2>;
-            key-positions = <>;
-        };
-
-        intellij {
-            bindings = <&to 1>;
-            key-positions = <>;
-        };
-
-        base {
-            bindings = <&to 0>;
-            key-positions = <>;
-        };
-
-        discord {
-            bindings = <&to 0>;
-            key-positions = <>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
