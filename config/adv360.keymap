@@ -119,6 +119,15 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        tmux_f2: tmux_f2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 2 &kp F2>;
+            label = "TMUX_F2";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -126,7 +135,7 @@
             bindings = <
 &kp EQUAL                      &kp N1  &kp N2        &kp N3    &kp N4     &kp N5  &none                                                                                    &mo 5      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0               &kp MINUS
 &kp TAB                        &kp Q   &kp W         &kp E     &kp R      &kp T   &none                                                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P                &kp BACKSLASH
-&home_row LEFT_CONTROL ESCAPE  &kp A   &kp S         &kp D     &kp F      &kp G   &none         &kp F2         &kp F4            &kp F3                         &kp F1     &none      &kp H   &kp J   &kp K      &kp L     &mo_tap 3 SEMICOLON  &kp SQT
+&home_row LEFT_CONTROL ESCAPE  &kp A   &kp S         &kp D     &kp F      &kp G   &none         &tmux_f2       &kp F4            &kp F3                         &kp F1     &none      &kp H   &kp J   &kp K      &kp L     &mo_tap 3 SEMICOLON  &kp SQT
 &kp LEFT_SHIFT                 &kp Z   &kp X         &kp C     &kp V      &kp B                                &kp LEFT_ALT      &kp LG(LA(LS(RIGHT_CONTROL)))                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH             &kp RIGHT_SHIFT
 &mo 3                          &mo 4   &kp LEFT_ALT  &kp LEFT  &kp RIGHT          &kp LEFT_GUI  &kp BACKSPACE  &mo 3             &mo 4                          &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT             &mo 3
             >;
