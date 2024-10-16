@@ -13,28 +13,28 @@
         tmux: tmux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F2 &to 2>;
+            bindings = <&to 2 &kp F2>;
             label = "TMUX";
         };
 
         intellij: intellij {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F3 &to 1>;
+            bindings = <&to 1 &kp F3>;
             label = "INTELLIJ";
         };
 
         chrome: chrome {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F1 &to 0>;
+            bindings = <&to 0 &kp F1>;
             label = "CHROME";
         };
 
         discord: discord {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F4 &to 0>;
+            bindings = <&to 0 &kp F4>;
             label = "DISCORD";
         };
 
