@@ -142,11 +142,11 @@
 
         base {
             bindings = <
-&kp EQUAL                      &kp N1  &kp N2        &kp N3    &kp N4     &kp N5  &kp F2                                                                                       &kp F1     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0               &kp MINUS
-&kp TAB                        &kp Q   &kp W         &kp E     &kp R      &kp T   &kp F4                                                                                       &kp F3     &kp Y   &kp U   &kp I      &kp O     &kp P                &kp BACKSLASH
-&home_row LEFT_CONTROL ESCAPE  &kp A   &kp S         &kp D     &kp F      &kp G   &kp F6        &kp F2             &none             &none                          &kp F1     &kp F5     &kp H   &kp J   &kp K      &kp L     &mo_tap 3 SEMICOLON  &kp SQT
-&kp LEFT_SHIFT                 &kp Z   &kp X         &kp C     &kp V      &kp B                                    &kp LEFT_ALT      &kp LG(LA(LS(RIGHT_CONTROL)))                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH             &kp RIGHT_SHIFT
-&kp LEFT_CONTROL               &mo 1   &kp LEFT_ALT  &kp LEFT  &kp RIGHT          &kp LEFT_GUI  &backspace_delete  &mo 3             &mo_tap 4 LC(B)                &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT             &mo 3
+&kp EQUAL                      &kp N1  &kp N2        &kp N3    &kp N4     &kp N5  &kp F2                                                                                   &kp F1     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0               &kp MINUS
+&kp TAB                        &kp Q   &kp W         &kp E     &kp R      &kp T   &kp F4                                                                                   &kp F3     &kp Y   &kp U   &kp I      &kp O     &kp P                &kp BACKSLASH
+&home_row LEFT_CONTROL ESCAPE  &kp A   &kp S         &kp D     &kp F      &kp G   &kp F6        &kp F2         &none             &none                          &kp F1     &kp F5     &kp H   &kp J   &kp K      &kp L     &mo_tap 3 SEMICOLON  &kp SQT
+&kp LEFT_SHIFT                 &kp Z   &kp X         &kp C     &kp V      &kp B                                &kp LEFT_ALT      &kp LG(LA(LS(RIGHT_CONTROL)))                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH             &kp RIGHT_SHIFT
+&kp LEFT_CONTROL               &mo 1   &kp LEFT_ALT  &kp LEFT  &kp RIGHT          &kp LEFT_GUI  &kp BACKSPACE  &mo 3             &mo_tap 4 LC(B)                &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT             &mo 3
             >;
         };
 
@@ -172,11 +172,11 @@
 
         symbol {
             bindings = <
-&kp TILDE  &kp F1                &kp F2          &kp F3         &kp F4            &kp F5  &trans                                         &trans     &kp F6        &kp F7             &kp F8            &kp F9            &kp F10                &kp BACKSPACE
-&kp GRAVE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LESS_THAN  &kp LEFT_BRACKET  &trans  &kp LG(C)                                      &kp LG(V)  &trans        &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp RIGHT_BRACE   &kp RIGHT_PARENTHESIS  &kp DEL
-&kp CARET  &kp NUMBER_1          &kp NUMBER_2    &kp NUMBER_3   &kp NUMBER_4      &kp N5  &trans     &trans  &trans      &trans  &trans  &trans     &kp NUMBER_6  &kp N7             &kp N8            &kp N9            &kp N0                 &kp DOLLAR
-&trans     &trans                &trans          &trans         &trans            &trans                     &trans      &trans                     &trans        &trans             &kp LESS_THAN     &kp GREATER_THAN  &trans                 &trans
-&trans     &trans                &trans          &trans         &trans                    &trans     &trans  &trans      &trans  &trans  &trans                   &trans             &trans            &trans            &trans                 &trans
+&kp TILDE  &kp F1                &kp F2          &kp F3         &kp F4            &kp F5  &none                                           &none      &kp F6        &kp F7             &kp F8            &kp F9            &kp F10                &kp BACKSPACE
+&kp GRAVE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LESS_THAN  &kp LEFT_BRACKET  &none   &none                                           &none      &trans        &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp RIGHT_BRACE   &kp RIGHT_PARENTHESIS  &kp DEL
+&kp CARET  &kp NUMBER_1          &kp NUMBER_2    &kp NUMBER_3   &kp NUMBER_4      &kp N5  &kp LG(C)  &trans   &trans      &trans  &trans  &kp LG(V)  &kp NUMBER_6  &kp N7             &kp N8            &kp N9            &kp N0                 &kp DOLLAR
+&none      &trans                &trans          &trans         &trans            &trans                      &trans      &trans                     &trans        &trans             &kp LESS_THAN     &kp GREATER_THAN  &trans                 &none
+&none      &trans                &trans          &trans         &trans                    &trans     &kp DEL  &trans      &trans  &trans  &trans                   &trans             &trans            &trans            &trans                 &none
             >;
         };
 
