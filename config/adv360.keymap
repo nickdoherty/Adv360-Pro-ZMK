@@ -127,8 +127,9 @@
         compatible = "zmk,combos";
 
         tmux {
-            bindings = <&to 2>;
-            key-positions = <35>;
+            bindings = <&kp F2>;
+            key-positions = <>;
+            layers = <2>;
         };
 
         intellij {
