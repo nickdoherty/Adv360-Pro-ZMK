@@ -10,32 +10,32 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        f2: tmux {
+        f2: f2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 2 &kp F2>;
-            label = "TMUX";
+            label = "f2";
         };
 
-        f3: intellij {
+        f3: f3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 1 &kp F3>;
-            label = "INTELLIJ";
+            label = "f3";
         };
 
-        f1: chrome {
+        f1: f1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 0 &kp F1>;
-            label = "CHROME";
+            label = "f1";
         };
 
-        f4: discord {
+        f4: f4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 0 &kp F4>;
-            label = "DISCORD";
+            label = "f4";
         };
 
         #endif
