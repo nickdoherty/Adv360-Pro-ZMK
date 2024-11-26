@@ -194,11 +194,11 @@
 
         aerospace {
             bindings = <
-&kp TILDE  &kp LG(LC(NUMBER_1))  &kp LG(LC(NUMBER_2))  &kp LC(LG(NUMBER_3))  &kp LG(LC(NUMBER_4))  &kp LG(LC(N5))  &none                                  &none              &kp LG(LC(LS(NUMBER_1)))  &kp LG(LC(LS(NUMBER_2)))  &kp LC(LS(LG(NUMBER_3)))  &kp LG(LC(LS(NUMBER_4)))  &kp LG(LC(LS(N5)))         &none
-&kp GRAVE  &none                 &none                 &none                 &none                 &none           &none                                  &kp LG(LC(COMMA))  &kp LG(LC(LS(H)))         &kp LG(LC(LS(J)))         &kp LG(LC(LS(K)))         &kp LG(LC(LS(L)))         &none                      &none
-&none      &none                 &none                 &none                 &kp LG(LC(F))         &none           &none  &none  &none      &none  &none  &kp LG(LC(SLASH))  &kp LG(LC(H))             &kp LC(LG(K))             &kp LG(LC(K))             &kp LG(LC(L))             &kp LC(LS(LG(SEMICOLON)))  &none
-&none      &kp LG(LC(Z))         &none                 &none                 &none                 &none                         &none      &none                            &none                     &none                     &kp UP_ARROW              &none                     &kp LG(LC(LS(Z)))          &none
-&none      &none                 &none                 &none                 &none                                 &none  &none  &none      &none  &none  &none                                        &kp LEFT_ARROW            &kp DOWN                  &kp RIGHT                 &none                      &none
+&kp TILDE  &kp LG(LC(NUMBER_1))  &kp LG(LC(NUMBER_2))  &kp LC(LG(NUMBER_3))    &kp LG(LC(NUMBER_4))     &kp LG(LC(N5))  &none                                  &none              &kp LG(LC(LS(NUMBER_1)))  &kp LG(LC(LS(NUMBER_2)))  &kp LC(LS(LG(NUMBER_3)))  &kp LG(LC(LS(NUMBER_4)))  &kp LG(LC(LS(N5)))         &none
+&kp GRAVE  &none                 &none                 &none                   &none                    &none           &none                                  &kp LG(LC(COMMA))  &kp LG(LC(LS(H)))         &kp LG(LC(LS(J)))         &kp LG(LC(LS(K)))         &kp LG(LC(LS(L)))         &none                      &none
+&none      &none                 &none                 &none                   &kp LG(LC(F))            &none           &none  &none  &none      &none  &none  &kp LG(LC(SLASH))  &kp LG(LC(H))             &kp LC(LG(K))             &kp LG(LC(K))             &kp LG(LC(L))             &kp LC(LS(LG(SEMICOLON)))  &none
+&none      &kp LG(LC(Z))         &none                 &none                   &none                    &none                         &none      &none                            &none                     &none                     &kp UP_ARROW              &none                     &kp LG(LC(LS(Z)))          &none
+&none      &none                 &none                 &kp LG(LA(LEFT_ARROW))  &kp LG(LA(RIGHT_ARROW))                  &none  &none  &none      &none  &none  &none                                        &kp LEFT_ARROW            &kp DOWN                  &kp RIGHT                 &none                      &none
             >;
         };
 
