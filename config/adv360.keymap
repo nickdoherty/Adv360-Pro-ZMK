@@ -44,10 +44,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             flavor = "tap-preferred";
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <125>;
             hold-trigger-on-release;
         };
 
@@ -121,6 +121,8 @@
             label = "CMD_TAP";
             #binding-cells = <0>;
             bindings = <&kp LEFT_GUI>, <&mo 4>;
+
+            tapping-term-ms = <300>;
         };
 
         alt_tap: alt_tap {
@@ -128,6 +130,8 @@
             label = "ALT_TAP";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT>, <&mo 3>;
+
+            tapping-term-ms = <300>;
         };
 
         tmux_prefix_tap: tmux_prefix_tap {
@@ -135,6 +139,8 @@
             label = "TMUX_PREFIX_TAP";
             #binding-cells = <0>;
             bindings = <&kp LC(B)>, <&mo 5>;
+
+            tapping-term-ms = <300>;
         };
 
         ctrl_tap: ctrl_tap {
@@ -142,6 +148,8 @@
             label = "CTRL_TAP";
             #binding-cells = <0>;
             bindings = <&kp LEFT_CONTROL>, <&mo 7>;
+
+            tapping-term-ms = <300>;
         };
     };
 
