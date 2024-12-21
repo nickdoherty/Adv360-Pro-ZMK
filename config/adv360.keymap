@@ -120,16 +120,16 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CMD_TAP";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI>, <&mo 4>;
+            bindings = <&kp LEFT_GUI>, <&kp LEFT_CONTROL>;
 
             tapping-term-ms = <300>;
         };
 
-        alt_tap: alt_tap {
+        alt_symbol: alt_symbol {
             compatible = "zmk,behavior-tap-dance";
-            label = "ALT_TAP";
+            label = "ALT_SYMBOL";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT>, <&mo 3>;
+            bindings = <&kp LEFT_ALT>, <&mo 1>;
 
             tapping-term-ms = <300>;
         };
@@ -138,7 +138,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TMUX_PREFIX_TAP";
             #binding-cells = <0>;
-            bindings = <&kp LC(B)>, <&mo 5>;
+            bindings = <&kp LC(B)>, <&mo 3>;
 
             tapping-term-ms = <300>;
         };
@@ -147,7 +147,16 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CTRL_TAP";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL>, <&mo 7>;
+            bindings = <&kp LEFT_CONTROL>, <&mo 5>;
+
+            tapping-term-ms = <300>;
+        };
+
+        enter_hyper: enter_hyper {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ENTER_HYPER";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER>, <&kp LG(LS(LA(LEFT_CONTROL)))>;
 
             tapping-term-ms = <300>;
         };
@@ -155,66 +164,16 @@
 
     combos { compatible = "zmk,combos"; };
 
-    macros {
-        tmux_f2: tmux_f2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 2 &kp F2>;
-            label = "TMUX_F2";
-        };
-
-        intellij_f3: intellij_f3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 1 &kp F3>;
-            label = "INTELLIJ_F3";
-        };
-
-        chrome_f1: chrome_f1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 0 &kp F1>;
-            label = "CHROME_F1";
-        };
-
-        discord_f4: discord_f4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 0 &kp F4>;
-            label = "DISCORD_F4";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-&kp EQUAL                      &kp N1  &kp N2        &kp N3    &kp N4     &kp N5  &none                                                                                &mo 6      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0               &kp MINUS
-&kp TAB                        &kp Q   &kp W         &kp E     &kp R      &kp T   &none                                                                                &none      &kp Y   &kp U   &kp I      &kp O     &kp P                &kp BACKSLASH
-&home_row LEFT_CONTROL ESCAPE  &kp A   &kp S         &kp D     &kp F      &kp G   &none     &tmux_f2       &discord_f4      &intellij_f3                   &chrome_f1  &none      &kp H   &kp J   &kp K      &kp L     &mo_tap 3 SEMICOLON  &home_row LEFT_ALT SQT
-&kp LEFT_SHIFT                 &kp Z   &kp X         &kp C     &kp V      &kp B                            &ctrl_tap        &kp LG(LA(LS(RIGHT_CONTROL)))                         &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH             &kp RIGHT_SHIFT
-&mo 3                          &mo 4   &kp LEFT_ALT  &kp LEFT  &kp RIGHT          &cmd_tap  &kp BACKSPACE  &alt_tap         &kp LG(LEFT_ALT)               &kp ENTER   &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT             &kp RIGHT_ALT
-            >;
-        };
-
-        intellij {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &kp LG(LEFT_ALT)  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        tmux {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &kp LC(B)  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp EQUAL                      &kp N1  &kp N2        &kp N3    &kp N4     &kp N5  &none                                                                    &mo 4      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0               &kp MINUS
+&kp TAB                        &kp Q   &kp W         &kp E     &kp R      &kp T   &none                                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P                &kp BACKSLASH
+&home_row LEFT_CONTROL ESCAPE  &kp A   &kp S         &kp D     &kp F      &kp G   &none     &kp F2         &kp F4           &kp F3           &kp F1        &none      &kp H   &kp J   &kp K      &kp L     &mo_tap 1 SEMICOLON  &home_row LEFT_ALT SQT
+&kp LEFT_SHIFT                 &kp Z   &kp X         &kp C     &kp V      &kp B                            &ctrl_tap        &mo 2                                     &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH             &kp RIGHT_SHIFT
+&mo 1                          &mo 2   &kp LEFT_ALT  &kp LEFT  &kp RIGHT          &cmd_tap  &kp BACKSPACE  &alt_symbol      &mo_tap 1 LC(B)  &enter_hyper  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT             &kp RIGHT_ALT
             >;
         };
 
@@ -260,7 +219,7 @@
 
         keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 7      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 5      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
