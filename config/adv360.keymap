@@ -138,7 +138,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TMUX_PREFIX_TAP";
             #binding-cells = <0>;
-            bindings = <&kp LC(B)>, <&mo 3>;
+            bindings = <&kp LC(B)>, <&mo 0>;
 
             tapping-term-ms = <300>;
         };
@@ -147,7 +147,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CTRL_TAP";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL>, <&mo 5>;
+            bindings = <&kp LEFT_CONTROL>, <&mo 4>;
 
             tapping-term-ms = <300>;
         };
@@ -178,21 +178,21 @@
 
         base {
             bindings = <
-&kp EQUAL                      &kp N1  &kp N2        &kp N3    &kp N4     &kp N5  &none                                                                             &mo 4      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0               &kp MINUS
+&kp EQUAL                      &kp N1  &kp N2        &kp N3    &kp N4     &kp N5  &none                                                                             &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0               &kp MINUS
 &kp TAB                        &kp Q   &kp W         &kp E     &kp R      &kp T   &none                                                                             &none      &kp Y   &kp U   &kp I      &kp O     &kp P                &kp BACKSLASH
 &home_row LEFT_CONTROL ESCAPE  &kp A   &kp S         &kp D     &kp F      &kp G   &none     &kp F2         &kp F4                    &kp F3           &kp F1        &none      &kp H   &kp J   &kp K      &kp L     &mo_tap 1 SEMICOLON  &home_row LEFT_ALT SQT
-&kp LEFT_SHIFT                 &kp Z   &kp X         &kp C     &kp V      &kp B                            &kp LG(C)                 &kp LG(V)                                 &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH             &kp RIGHT_SHIFT
+&kp LEFT_SHIFT                 &kp Z   &kp X         &kp C     &kp V      &kp B                            &kp LG(C)                 &mo_tap 2 LG(V)                           &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH             &kp RIGHT_SHIFT
 &mo 1                          &mo 2   &kp LEFT_ALT  &kp LEFT  &kp RIGHT          &cmd_tap  &kp BACKSPACE  &esctap_symhold_copy      &mo_tap 1 LC(B)  &enter_hyper  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT             &kp RIGHT_ALT
             >;
         };
 
         symbol {
             bindings = <
-&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none                                           &none      &kp F6                &kp F7                 &kp F8            &kp F9             &kp F10  &kp BACKSPACE
-&kp GRAVE  &trans  &trans  &trans  &trans  &trans  &none                                           &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none    &kp DEL
-&kp CARET  &trans  &trans  &trans  &trans  &trans  &kp LG(C)  &trans   &trans      &trans  &trans  &kp LG(V)  &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none    &kp DOLLAR
-&trans     &trans  &trans  &trans  &trans  &trans                      &trans      &trans                     &trans                &trans                 &kp UP_ARROW      &trans             &trans   &trans
-&trans     &trans  &trans  &trans  &trans          &trans     &kp DEL  &trans      &trans  &trans  &trans                           &kp LEFT_ARROW         &kp DOWN          &kp RIGHT          &trans   &trans
+&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none                                           &none      &kp F6                &kp F7                 &kp F8            &kp F9             &kp F10      &kp BACKSPACE
+&kp GRAVE  &trans  &trans  &trans  &trans  &trans  &none                                           &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT  &kp DEL
+&kp CARET  &trans  &trans  &trans  &trans  &trans  &kp LG(C)  &trans   &trans      &trans  &trans  &kp LG(V)  &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE    &none        &kp DOLLAR
+&trans     &trans  &trans  &trans  &trans  &trans                      &trans      &trans                     &trans                &trans                 &kp UP_ARROW      &trans             &trans       &trans
+&trans     &trans  &trans  &trans  &trans          &trans     &kp DEL  &trans      &trans  &trans  &trans                           &kp LEFT_ARROW         &kp DOWN          &kp RIGHT          &trans       &trans
             >;
         };
 
@@ -203,16 +203,6 @@
 &none      &none                 &none                 &none                   &kp LG(LC(F))            &none           &none  &none  &none      &none  &none  &kp LG(LC(SLASH))  &kp LG(LC(H))             &kp LC(LG(K))             &kp LG(LC(K))             &kp LG(LC(L))             &kp LC(LS(LG(SEMICOLON)))  &none
 &none      &kp LG(LC(Z))         &none                 &none                   &none                    &none                         &none      &none                            &none                     &none                     &kp UP_ARROW              &none                     &kp LG(LC(LS(Z)))          &none
 &none      &none                 &none                 &kp LG(LA(LEFT_ARROW))  &kp LG(LA(RIGHT_ARROW))                  &none  &none  &none      &none  &none  &none                                        &kp LEFT_ARROW            &kp DOWN                  &kp RIGHT                 &none                      &none
-            >;
-        };
-
-        media {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -228,7 +218,7 @@
 
         keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 5      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 4      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
