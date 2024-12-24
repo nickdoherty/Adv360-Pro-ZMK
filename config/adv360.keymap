@@ -158,7 +158,7 @@
             #binding-cells = <0>;
             bindings = <&kp ENTER>, <&kp LG(LS(LA(LEFT_CONTROL)))>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
         };
 
         esctap_symhold_aerodtap: esctap_symhold_aerodtap {
