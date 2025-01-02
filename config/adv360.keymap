@@ -188,11 +188,11 @@
 
         symbol {
             bindings = <
-&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4            &kp F5             &none                                           &none   &kp F6            &kp F7             &kp F8  &kp F9  &kp F10      &kp BACKSPACE
-&kp GRAVE  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                                           &none   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &kp PERCENT  &kp DEL
-&kp CARET  &trans  &trans  &trans  &kp LESS_THAN     &kp GREATER_THAN   &none   &trans   &trans      &trans  &kp GRAVE  &none   &kp LESS_THAN     &kp GREATER_THAN   &trans  &trans  &none        &kp DOLLAR
-&trans     &trans  &trans  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE                     &trans      &trans                     &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans  &trans       &trans
-&trans     &trans  &trans  &trans  &trans                               &trans  &kp DEL  &trans      &trans  &trans     &trans                    &trans             &trans  &trans  &trans       &trans
+&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4            &kp F5             &none                                        &none   &kp F6            &kp F7             &kp F8  &kp F9  &kp F10      &kp BACKSPACE
+&kp GRAVE  &trans  &trans  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &none                                        &none   &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans  &kp PERCENT  &kp DEL
+&kp CARET  &trans  &trans  &trans  &kp LESS_THAN     &kp GREATER_THAN   &none   &trans   &trans      &trans  &trans  &none   &kp LESS_THAN     &kp GREATER_THAN   &trans  &trans  &none        &kp DOLLAR
+&trans     &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                   &trans      &trans                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans       &trans
+&trans     &trans  &trans  &none   &none                                &trans  &kp DEL  &trans      &trans  &trans  &trans                    &none              &none   &trans  &trans       &trans
             >;
         };
 
