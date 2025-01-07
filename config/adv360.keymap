@@ -44,11 +44,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
-            quick-tap-ms = <150>;
+            quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
-            hold-trigger-on-release;
         };
 
         mo_tap: mo_tap {
@@ -167,7 +166,7 @@
             #binding-cells = <0>;
             bindings = <&mo_tap 1 ESCAPE>, <&mo 2>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
         };
     };
 
