@@ -44,7 +44,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <175>;
             flavor = "tap-preferred";
             quick-tap-ms = <125>;
             require-prior-idle-ms = <125>;
@@ -103,7 +103,7 @@
             #binding-cells = <0>;
             bindings = <&home_row LEFT_GUI BACKSPACE>, <&sl 0>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <175>;
         };
 
         spc_bkspc: spc_bkspc {
@@ -121,7 +121,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_GUI>, <&kp LEFT_CONTROL>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <175>;
         };
 
         alt_symbol: alt_symbol {
@@ -130,7 +130,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT>, <&mo 1>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <175>;
         };
 
         tmux_prefix_tap: tmux_prefix_tap {
@@ -148,7 +148,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_CONTROL>, <&mo 4>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <175>;
         };
 
         enter_hyper: enter_hyper {
@@ -157,7 +157,7 @@
             #binding-cells = <0>;
             bindings = <&kp ENTER>, <&kp LG(LS(LA(LEFT_CONTROL)))>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <175>;
         };
 
         esctap_symhold_aerodtap: esctap_symhold_aerodtap {
@@ -166,7 +166,7 @@
             #binding-cells = <0>;
             bindings = <&mo_tap 1 ESCAPE>, <&mo 2>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <175>;
         };
     };
 
