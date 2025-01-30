@@ -187,11 +187,11 @@
 
         symbol {
             bindings = <
-&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4            &kp F5             &none                                        &none   &kp F6            &kp F7             &kp F8  &kp F9  &kp F10      &kp BACKSPACE
-&kp GRAVE  &trans  &trans  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &none                                        &none   &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans  &kp PERCENT  &kp DEL
-&kp CARET  &trans  &trans  &trans  &kp LESS_THAN     &kp GREATER_THAN   &none   &trans   &trans      &trans  &trans  &none   &kp LESS_THAN     &kp GREATER_THAN   &trans  &trans  &none        &kp DOLLAR
-&trans     &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                   &trans      &trans                  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans       &trans
-&trans     &trans  &trans  &none   &none                                &trans  &kp DEL  &trans      &trans  &trans  &trans                    &none              &none   &trans  &trans       &trans
+&kp TILDE  &none  &none  &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none                                    &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+&kp GRAVE  &none  &none  &none  &kp LEFT_BRACE    &kp RIGHT_BRACE    &none                                    &none  &kp LEFT_BRACE    &kp RIGHT_BRACE    &none  &none                 &kp PERCENT            &kp DEL
+&kp CARET  &none  &none  &none  &kp LESS_THAN     &kp GREATER_THAN   &none  &none    &none      &none  &none  &none  &kp LESS_THAN     &kp GREATER_THAN   &none  &none                 &none                  &kp DOLLAR
+&none      &none  &none  &none  &none             &none                              &none      &none                &none             &none              &none  &none                 &none                  &none
+&none      &none  &none  &none  &none                                &none  &kp DEL  &none      &none  &none  &none                    &none              &none  &none                 &none                  &none
             >;
         };
 
@@ -222,6 +222,16 @@
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
 &mo 0      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 0
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
