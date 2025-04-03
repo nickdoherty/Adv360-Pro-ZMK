@@ -198,7 +198,7 @@
                 <&macro_release>,
                 <&kp F7>,
                 <&macro_release>,
-                <&kp F7>;
+                <&kp LS(LA(LC(LEFT_GUI)))>;
 
             label = "NEXT_WINDOW";
             wait-ms = <10>;
