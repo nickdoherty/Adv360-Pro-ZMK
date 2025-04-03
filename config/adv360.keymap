@@ -180,7 +180,8 @@
                 <&macro_press>,
                 <&kp LS(LA(LC(LEFT_GUI)))>,
                 <&macro_tap>,
-                <&kp F>;
+                <&kp F>,
+                <&macro_release>;
 
             label = "FORMAT";
             wait-ms = <10>;
@@ -193,7 +194,8 @@
                 <&macro_press>,
                 <&kp LS(LA(LC(LEFT_GUI)))>,
                 <&macro_tap>,
-                <&kp F7>;
+                <&kp F7>,
+                <&macro_release>;
 
             label = "NEXT_WINDOW";
             wait-ms = <10>;
