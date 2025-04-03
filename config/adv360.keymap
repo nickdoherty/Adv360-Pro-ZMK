@@ -195,7 +195,6 @@
                 <&macro_press>,
                 <&kp LS(LA(LC(LEFT_GUI)))>,
                 <&macro_tap>,
-                <&macro_release>,
                 <&kp F7>,
                 <&macro_release>,
                 <&kp LS(LA(LC(LEFT_GUI)))>;
