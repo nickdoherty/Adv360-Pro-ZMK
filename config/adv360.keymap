@@ -176,15 +176,27 @@
         format: format {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LEFT_GUI))) &kp F>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(LA(LC(LEFT_GUI)))>,
+                <&macro_tap>,
+                <&kp F>;
+
             label = "FORMAT";
+            wait-ms = <10>;
         };
 
         next_window: next_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LEFT_GUI))) &kp F7>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(LA(LC(LEFT_GUI)))>,
+                <&macro_tap>,
+                <&kp F7>;
+
             label = "NEXT_WINDOW";
+            wait-ms = <10>;
         };
     };
 
