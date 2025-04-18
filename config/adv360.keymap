@@ -128,7 +128,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ALT_SYMBOL";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT>, <&mo 1>;
+            bindings = <&kp LEFT_ALT>, <&mo 2>;
 
             tapping-term-ms = <175>;
         };
@@ -146,7 +146,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CTRL_TAP";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL>, <&mo 4>;
+            bindings = <&kp LEFT_CONTROL>, <&mo 5>;
 
             tapping-term-ms = <175>;
         };
@@ -164,7 +164,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ESCTAP_SYMHOLD_AERODTAP";
             #binding-cells = <0>;
-            bindings = <&mo_tap 1 ESCAPE>, <&mo 2>;
+            bindings = <&mo_tap 2 ESCAPE>, <&mo 3>;
 
             tapping-term-ms = <175>;
         };
@@ -202,6 +202,21 @@
             label = "NEXT_WINDOW";
             wait-ms = <10>;
         };
+
+        vim: vim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(LA(LC(LEFT_GUI)))>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LS(LA(LC(LEFT_GUI)))>;
+
+            label = "VIM";
+            wait-ms = <10>;
+        };
     };
 
     keymap {
@@ -209,11 +224,21 @@
 
         base {
             bindings = <
-&kp EQUAL                      &kp N1        &kp N2                    &kp N3    &kp N4     &kp N5  &kp LS(LC(LEFT_ALT))                                                      &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0               &lt 1 MINUS
+&kp EQUAL                      &kp N1        &kp N2                    &kp N3    &kp N4     &kp N5  &kp LS(LC(LEFT_ALT))                                                      &mo 4      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0               &lt 2 MINUS
 &kp TAB                        &kp Q         &kp W                     &kp E     &kp R      &kp T   &kp F6                                                                    &kp F9     &kp Y   &kp U   &kp I      &kp O     &kp P                &kp BACKSLASH
-&home_row LEFT_CONTROL ESCAPE  &kp A         &kp S                     &kp D     &kp F      &kp G   &kp F8                &kp F2         &kp F4         &kp F3     &kp F1     &kp F10    &kp H   &kp J   &kp K      &kp L     &mo_tap 1 SEMICOLON  &home_row LEFT_ALT SQT
+&home_row LEFT_CONTROL ESCAPE  &kp A         &kp S                     &kp D     &kp F      &kp G   &kp F8                &kp F2         &kp F4         &kp F3     &kp F1     &kp F10    &kp H   &kp J   &kp K      &kp L     &mo_tap 2 SEMICOLON  &home_row LEFT_ALT SQT
 &kp LEFT_SHIFT                 &kp Z         &kp X                     &kp C     &kp V      &kp B                                        &kp F5         &kp F7                           &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH             &kp RIGHT_SHIFT
-&mo 1                          &kp LEFT_ALT  &kp LS(LA(LC(LEFT_GUI)))  &kp LEFT  &kp RIGHT          &kp LGUI              &kp BACKSPACE  &kp GRAVE      &kp LC(B)  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT             &mo 5
+&mo 2                          &kp LEFT_ALT  &kp LS(LA(LC(LEFT_GUI)))  &kp LEFT  &kp RIGHT          &kp LGUI              &kp BACKSPACE  &kp GRAVE      &kp LC(B)  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT             &mo 6
+            >;
+        };
+
+        intellij {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &kp LS(LA(LC(LEFT_GUI)))  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -249,7 +274,7 @@
 
         keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 4      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 5      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
