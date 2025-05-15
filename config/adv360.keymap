@@ -244,11 +244,11 @@
 
         symbol {
             bindings = <
-&kp TILDE  &none  &none  &none  &none    &none  &none                                         &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-&kp GRAVE  &none  &none  &none  &none    &none  &none                                         &none  &kp LEFT_BRACE    &kp RIGHT_BRACE    &none  &none                 &kp PERCENT            &kp DEL
-&kp CARET  &none  &none  &none  &format  &none  &none  &none  &none      &none         &none  &none  &kp LESS_THAN     &kp GREATER_THAN   &none  &none                 &none                  &kp DOLLAR
-&none      &none  &none  &none  &none    &none                &none      &next_window                &none             &none              &none  &none                 &none                  &none
-&none      &none  &none  &none  &none           &none  &none  &none      &none         &none  &none                    &none              &none  &none                 &none                  &none
+&kp TILDE  &none  &none  &none  &none    &none  &none                                         &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+&kp GRAVE  &none  &none  &none  &none    &none  &none                                         &none  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none                 &kp PERCENT            &kp DEL
+&kp CARET  &none  &none  &none  &format  &none  &none  &none  &none      &none         &none  &none  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none                 &none                  &kp DOLLAR
+&none      &none  &none  &none  &none    &none                &none      &next_window                &kp LESS_THAN         &kp GREATER_THAN       &none  &none                 &none                  &none
+&none      &none  &none  &none  &none           &none  &none  &none      &none         &none  &none                        &none                  &none  &none                 &none                  &none
             >;
         };
 
