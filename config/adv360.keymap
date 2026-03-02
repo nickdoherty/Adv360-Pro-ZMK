@@ -146,7 +146,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CTRL_TAP";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL>, <&mo 4>;
+            bindings = <&kp LEFT_CONTROL>, <&mo 3>;
 
             tapping-term-ms = <175>;
         };
@@ -164,7 +164,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ESCTAP_SYMHOLD_AERODTAP";
             #binding-cells = <0>;
-            bindings = <&mo_tap 1 ESCAPE>, <&mo 2>;
+            bindings = <&mo_tap 1 ESCAPE>, <&mo 0>;
 
             tapping-term-ms = <175>;
         };
@@ -228,7 +228,7 @@
 &kp TAB                        &kp Q         &kp W                     &kp E     &kp R      &kp T   &kp F6                                                                       &kp F9     &kp Y   &kp U   &kp I      &kp O     &kp P                &kp BACKSLASH
 &home_row LEFT_CONTROL ESCAPE  &kp A         &kp S                     &kp D     &kp F      &kp G   &kp F8                &kp F2         &kp F4            &kp F3     &kp F1     &kp F10    &kp H   &kp J   &kp K      &kp L     &mo_tap 1 SEMICOLON  &kp SQT
 &kp LEFT_SHIFT                 &kp Z         &kp X                     &kp C     &kp V      &kp B                                        &kp F5            &kp F7                           &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH             &kp RIGHT_SHIFT
-&mo 1                          &kp LEFT_ALT  &kp LS(LA(LC(LEFT_GUI)))  &kp LEFT  &kp RIGHT          &kp LGUI              &kp BACKSPACE  &kp LEFT_ALT      &kp GRAVE  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT             &mo 3
+&mo 1                          &kp LEFT_ALT  &kp LS(LA(LC(LEFT_GUI)))  &kp LEFT  &kp RIGHT          &kp LGUI              &kp BACKSPACE  &kp LEFT_ALT      &kp GRAVE  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT             &mo 2
             >;
         };
 
@@ -239,16 +239,6 @@
 &kp CARET  &none  &none  &none  &format  &none  &kp F15  &kp F17  &kp F18      &kp F19    &kp F20  &kp F16  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none                 &none                  &kp DOLLAR
 &none      &none  &none  &none  &none    &none                    &kp F21      &kp F23                      &kp LESS_THAN         &kp GREATER_THAN       &none  &none                 &kp C_VOL_UP           &none
 &none      &none  &none  &none  &none           &none    &none    &kp F22      &kp TILDE  &none    &none                          &none                  &none  &none                 &kp C_VOL_DN           &none
-            >;
-        };
-
-        aerospace {
-            bindings = <
-&kp TILDE  &kp LG(LC(NUMBER_1))  &kp LG(LC(NUMBER_2))  &kp LC(LG(NUMBER_3))    &kp LG(LC(NUMBER_4))     &kp LG(LC(N5))  &none                                    &none              &kp LG(LC(LS(NUMBER_1)))  &kp LG(LC(LS(NUMBER_2)))  &kp LC(LS(LG(NUMBER_3)))  &kp LG(LC(LS(NUMBER_4)))  &kp LG(LC(LS(N5)))         &none
-&kp GRAVE  &none                 &none                 &none                   &kp LG(LC(LS(R)))        &none           &none                                    &kp LG(LC(COMMA))  &kp LG(LC(LS(H)))         &kp LG(LC(LS(J)))         &kp LG(LC(LS(K)))         &kp LG(LC(LS(L)))         &none                      &none
-&none      &none                 &none                 &none                   &kp LG(LC(F))            &none           &none  &none  &none      &none  &kp F12  &kp LG(LC(SLASH))  &kp LG(LC(H))             &kp LC(LG(K))             &kp LG(LC(K))             &kp LG(LC(L))             &kp LC(LS(LG(SEMICOLON)))  &none
-&none      &kp LG(LC(Z))         &none                 &none                   &none                    &none                         &none      &none                              &none                     &none                     &kp UP_ARROW              &none                     &kp LG(LC(LS(Z)))          &none
-&none      &none                 &none                 &kp LG(LA(LEFT_ARROW))  &kp LG(LA(RIGHT_ARROW))                  &none  &none  &none      &none  &none    &none                                        &kp LEFT_ARROW            &kp DOWN                  &kp RIGHT                 &none                      &none
             >;
         };
 
@@ -264,7 +254,7 @@
 
         keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 4      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
